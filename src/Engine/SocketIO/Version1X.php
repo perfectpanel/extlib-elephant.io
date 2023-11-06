@@ -474,7 +474,7 @@ class Version1X extends AbstractSocketIO
 
         $encodedAuthPayload = json_encode($this->options['auth']);
         if ($encodedAuthPayload === false) {
-            throw new Exception('Can\'t parse auth option to JSON: ' . json_last_error_msg());
+            throw new InvalidArgumentException('Can\'t parse auth option to JSON: ' . json_last_error_msg());
         }
 
         $preString = '';
