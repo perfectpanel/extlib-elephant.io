@@ -84,4 +84,11 @@ interface EngineInterface extends LoggerAwareInterface
      * @param string $namespace the namespace
      */
     public function of($namespace);
+
+    /**
+     * Get options.
+     *
+     * @param array
+     */
+    public function getOptions();
 }
